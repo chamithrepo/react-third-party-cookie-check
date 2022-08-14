@@ -6,7 +6,7 @@ export const useThirdPartyCookieCheck = () => {
         const frame = document.createElement("iframe");
         frame.id = "3pc";
         frame.src =
-            "https://chamithrepo.github.io/create-third-party-cookie/";
+            "https://chamithrepo.github.io/create-third-party-cookie/";// Add your domain here
         frame.style.display = "none";
         frame.style.position = "fixed";
         document.body.appendChild(frame);
