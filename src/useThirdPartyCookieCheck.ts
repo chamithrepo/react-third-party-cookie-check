@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 
 export const useThirdPartyCookieCheck = () => {
+
     const [isSupported, setIsSupported] = useState(false);
+
     useEffect(() => {
         const frame = document.createElement("iframe");
         frame.id = "3pc";
@@ -23,5 +25,6 @@ export const useThirdPartyCookieCheck = () => {
             false
         );
     }, []);
+
     return isSupported;
 };
